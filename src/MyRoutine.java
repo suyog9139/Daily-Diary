@@ -66,24 +66,27 @@ class routine {
         p.setLocation(dim.width/2-p.getWidth()/2, dim.height/2-p.getHeight()/2);
         p.setLayout(null); 
 
-        // Main window Label
-        Color color1 = new Color(57, 53, 61);
         JLabel l = new JLabel("Date");
         l.setBounds(10, 10, 80, 25);
-        l.setBackground(color1);
         l.setForeground(Color.WHITE);
         // l.setFont(new Font("Arial", Font.BOLD, 20));
         JLabel l2 = new JLabel("Time");
         l2.setBounds(10, 40, 80, 25);
+        l2.setForeground(Color.WHITE);
         JLabel l3 = new JLabel("Note");
         l3.setBounds(10, 70, 80, 25);
+        l3.setForeground(Color.WHITE);
         JLabel l4 = new JLabel("Topic of Study");
         l4.setBounds(250, 10, 120, 25);
+        l4.setForeground(Color.WHITE);
         JLabel l5 = new JLabel("How Many Hours");
         l5.setBounds(250, 40, 120, 25);
+        l5.setForeground(Color.WHITE);
         JLabel l6 = new JLabel("Remarks");
         l6.setBounds(250, 70, 120, 25);
+        l6.setForeground(Color.WHITE);
         JLabel l7 = new JLabel("XYZ"); // Due to the bug of the program
+        // p.add(l);
         p.add(l);
         p.add(l2);
         p.add(l3);

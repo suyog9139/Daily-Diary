@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Daily-Diary_4dd4b442"
+        },
+        {
+            "type": "java",
+            "name": "Launch MyRoutine",
+            "request": "launch",
+            "mainClass": "MyRoutine",
+            "projectName": "Daily-Diary_4dd4b442"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

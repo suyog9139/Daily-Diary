@@ -123,35 +123,10 @@ class MysqlConnectionJDBC {
         }
     }
 
-    public static ResultSet RowCount() {
-        try {
-            Class.forName(DB_DRIVER);
-            connection = DriverManager.getConnection(DB_URL_FULL, DB_USER, DB_PASS);
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) FROM diary");
-            // while (resultSet.next()){
-            // System.out.println(resultSet.getInt(1));
-            // }
-            // int rs=resultSet.getInt(1);
-            return resultSet;
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 }
 
 public class Database {
     public static void main(String[] args) {
-        // MysqlConnectionJDBC.CreateTable();
-        // MysqlConnectionJDBC.AddElement();
-        // MysqlConnectionJDBC.View();
-        // MysqlConnectionJDBC.Delete("22/10/2010");
-        // MysqlConnectionJDBC.Search("17/5/2021", "", "", "", "", "");
-
-        // MysqlConnectionJDBC.RowCount();
 
     }
 }
