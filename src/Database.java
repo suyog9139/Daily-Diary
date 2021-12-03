@@ -73,12 +73,12 @@ class MysqlConnectionJDBC {
 
     }
 
-    public static void Delete(String date) {
+    public static void Delete(String date, String time) {
         try {
             Class.forName(DB_DRIVER);
             connection = DriverManager.getConnection(DB_URL_FULL, DB_USER, DB_PASS);
             Statement statement = connection.createStatement();
-            statement.executeUpdate("DELETE FROM diary WHERE Date = '" + date + "'");
+            statement.executeUpdate("DELETE FROM diary WHERE Date = '" + date + "' AND Time = '" + time + "'");
             statement.close();
             connection.close();
         } catch (ClassNotFoundException e) {

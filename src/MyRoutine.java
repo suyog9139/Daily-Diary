@@ -28,6 +28,7 @@ class RealDateTime{
 class routine {
     //
     static String R1 = ""; // Used to delete the record using date
+    static String R2 = ""; // Used to delete the record using date
 
     public static void Myroutine() {
         JFrame f = new JFrame("My Routine");
@@ -150,6 +151,7 @@ class routine {
                 if (table.getSelectedRow() >= 0) {
                     int row = table.getSelectedRow();
                     R1 = (String) table.getValueAt(row, 0).toString();
+                    R2 = (String) table.getValueAt(row, 1).toString();
                     t1.setText(table.getValueAt(row, 0).toString());
                     t2.setText(table.getValueAt(row, 1).toString());
                     t3.setText(table.getValueAt(row, 2).toString());
@@ -220,7 +222,7 @@ class routine {
             t4.setText("");
             t5.setText("");
             t6.setText("");
-            MysqlConnectionJDBC.Delete(R1);
+            MysqlConnectionJDBC.Delete(R1,R2);
         });
 
         JButton b4 = new JButton("View All");
