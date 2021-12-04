@@ -86,7 +86,7 @@ class routine {
         JLabel l6 = new JLabel("Remarks");
         l6.setBounds(250, 70, 120, 25);
         l6.setForeground(Color.WHITE);
-        JLabel l7 = new JLabel("XYZ"); // Due to the bug of the program
+        // JLabel l7 = new JLabel("XYZ"); // Due to the bug of the program
         // p.add(l);
         p.add(l);
         p.add(l2);
@@ -94,7 +94,7 @@ class routine {
         p.add(l4);
         p.add(l5);
         p.add(l6);
-        p.add(l7);
+        // p.add(l7);
 
         // // Real Time Date and Time
         String date = RealDateTime.RealDate();
@@ -150,8 +150,8 @@ class routine {
             public void valueChanged(ListSelectionEvent event) {
                 if (table.getSelectedRow() >= 0) {
                     int row = table.getSelectedRow();
-                    R1 = (String) table.getValueAt(row, 0).toString();
-                    R2 = (String) table.getValueAt(row, 1).toString();
+                    R1 = table.getValueAt(row, 0).toString();
+                    R2 = table.getValueAt(row, 1).toString();
                     t1.setText(table.getValueAt(row, 0).toString());
                     t2.setText(table.getValueAt(row, 1).toString());
                     t3.setText(table.getValueAt(row, 2).toString());
@@ -179,7 +179,6 @@ class routine {
             t6.setText("");
             MysqlConnectionJDBC.AddElement(s1, s2, s3, s4, s5, s6); // Add Record to database
             model.addRow(new Object[] { s1, s2, s3, s4, s5, s6 }); // Add row to table
-
         });
         
         JButton b2 = new JButton("Search");
@@ -275,14 +274,14 @@ class routine {
             f.dispose();
         });
 
-        JButton b7 = new JButton("");
+        // JButton b7 = new JButton("");
         p.add(b1);
         p.add(b2);
         p.add(b3);
         p.add(b4);
         p.add(b5);
         p.add(b6);
-        p.add(b7);
+        // p.add(b7);
 
         f.setVisible(true);
         f.add(p);
@@ -291,19 +290,3 @@ class routine {
     }
 }
 
-public class MyRoutine {
-    public static void main(String[] args) {
-        // TODO code application logic here
-        routine.Myroutine();
-        // ResultSet rs2= MysqlConnectionJDBC.Search("17/5/2021", "", "", "", "", "");
-        // try {
-        //     while (rs2.next()) {
-        //         System.out.println(rs2.getString("Date"));
-        //     }
-        // } catch (Exception e) {
-        //     JOptionPane.showMessageDialog(null, e);
-        // }
-        // RealDateTime.RealDate();
-
-    }
-}

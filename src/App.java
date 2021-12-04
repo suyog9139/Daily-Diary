@@ -113,7 +113,7 @@ class Login {
         button.setBounds(10, 260, 100, 30);
         button.addActionListener(e -> {
             String user = textField.getText();
-            String pass = passwordField.getText();
+            String pass = String.valueOf(passwordField.getPassword());
             if (user.equals("admin") && pass.equals("admin")) {
                 JOptionPane.showMessageDialog(null, "Login Successful");
                 routine.Myroutine();
