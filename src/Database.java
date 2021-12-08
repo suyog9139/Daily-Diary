@@ -1,5 +1,4 @@
 import java.sql.*;
-// import java.util.*;
 
 class MysqlConnectionJDBC {
     static String date = "";
@@ -122,6 +121,5 @@ class MysqlConnectionJDBC {
             e.printStackTrace();
         }
     }
-
 }
 
