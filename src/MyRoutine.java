@@ -286,7 +286,6 @@ class routine {
         f.setVisible(true);
         f.add(p);
         f.setLayout(null);
-
     }
 }
 
