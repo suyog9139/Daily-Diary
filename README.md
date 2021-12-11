@@ -25,3 +25,6 @@ In this project we have 4 classes to be implemented in App class.:
 2. 'RealDateTime' class - that return real date and time string
 3. 'routine' class - that create routine window and perform routine operation.
 4. 'MysqlConnectionJDBC' class - that create connection to mysql database and perform various database operations.
+
+![alt text](https://github.com/suyog9139/Daily-Diary/blob/master/images/login.png?raw=true)
+![alt text](https://github.com/suyog9139/Daily-Diary/blob/master/images/Main.png?raw=true)
